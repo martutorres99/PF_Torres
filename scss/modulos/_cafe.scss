@@ -1,0 +1,71 @@
+.granosImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+}
+
+.h2Cafe{
+    padding: 30px;
+}
+
+form{
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+
+
+.img_coffee{
+    height: 80%;
+    width: 21%;
+    width: 200px;
+    border-radius: 13px;
+}
+
+.p_card{
+    width: 40%;
+    line-height: 30px;
+}
+
+.button_card{
+    @include estilo_btn (#F9FEFB, rgb(42, 97, 30), "small");
+    border-radius: 15px;
+    font-size: 12px;
+    border: solid 2px ;
+}
+
+.button_card:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.397);
+    color: white;
+}
+
+#main_buy{
+    background-color: #F9FEFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.compra_padre{
+    background-color: #b6a545a6;
+    height: 45%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.compra_hijo{
+    background-color: rgba(17, 143, 6, 0.288);
+    height: 45%;
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+

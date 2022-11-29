@@ -1,0 +1,206 @@
+@import "./modulos/comprar";
+@import "./modulos/cafe";
+@import "./modulos/contacto";
+@import "./modulos/nosotros";
+@import "./modulos/footer";
+@import "./modulos/inicio";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width:600px) {
+
+    header{
+        height: 400px;
+    }
+
+    nav{
+        height: 300px;
+    }
+
+    ul{
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    #index_section{
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1.5fr 2.5fr;
+    }
+
+    #compra_main{
+        height: 1500px;
+    }
+
+    #compra_grilla{
+        display: grid;
+        grid-template-columns: 92%;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: "p"
+                             "brasil"
+                             "colombia"
+                             "nicaragua"
+                             "peru";
+        justify-content: center;
+        align-content: center;
+    } 
+
+  
+    footer{
+        height: 200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "text"
+                             "icons";
+    }
+
+    .footer_h3{
+        font-size: 20px;
+        grid-area: text;
+        justify-self: center;
+        align-self: flex-end;
+    }
+
+    #footer_iconos{
+        grid-area: icons;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .compra_hijo{
+        flex-direction: column;
+    }
+
+    .img_coffee{
+        height: 40%;
+        width: 50%;
+    }
+
+    .p_card{
+        width: 98%;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .button_card{
+        width: 28%;
+        height: 11%;
+        font-size: 14px;
+    }
+
+    form{
+        height: 600px;
+        width: 75%;
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "title"
+                             "name"
+                             "surname"
+                             "email"
+                             "text"
+                             "button";
+        align-content: center;
+        justify-content: center;
+        row-gap: 15px;
+        
+    }
+
+    #contact_send{
+        justify-self: center;
+    }
+
+    #nosotros_h2{
+        font-size: 20px;
+    }
+
+    #nosotros_img{
+        width: 65%;
+        height: 230px;
+    }
+
+    .nosotros_p{
+        font-size: 18px;
+        line-height: 19px;
+    }
+}
+
+@keyframes colors{
+    0%{
+        background-color: #6b1b00ce;
+    }
+
+    25%{
+        background-color: #9e4909d3;
+    }
+
+    50%{
+        background-color: #812709ce;
+    }
+    
+    75%{
+        background-color: #857d2bdc;
+    }
+
+    100%{
+        background-color: #cc7727d8;
+    }
+}
+
+@mixin estilo_btn ($bg_color, $color, $size){
+    background-color: $bg_color;
+    color: $color;
+    border-radius: 8px;
+
+    @if $size == "small"{
+        height: 17%;
+        width: 12%;
+    }
+    
+    @else if $size == "medium"{
+        height: 40px;
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

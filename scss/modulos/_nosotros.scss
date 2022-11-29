@@ -1,0 +1,32 @@
+
+
+#main_us{
+    height: 1200px;
+}
+
+#nosotros_section{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nosotros_img{
+    object-fit: cover;
+    width: 70%;
+    height: 300px;
+}
+
+#nosotros_h2{
+    font-size: 30px;
+}
+
+.nosotros_p{
+    width: 85%;
+    line-height: 30px;
+}
+
+
+
+

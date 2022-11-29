@@ -1,0 +1,75 @@
+
+
+#main_contact{
+    height: 800px;
+}
+
+form{
+    width: 55%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "title title"
+                         "name name"
+                         "surname surname"
+                         "email email"
+                         "text ."
+                         "text button";
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: #f0dbb6a4;
+    border: solid 1px #6B1B00;
+    
+}
+
+#contact_h2{
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+    color: #6B1B00;
+}
+
+#contact_name{
+    grid-area: name;
+    border: solid 1px #6B1B00;
+}
+
+#contact_surname{
+    grid-area: surname;
+    border: solid 1px #6B1B00;
+}
+
+#contact_email{
+    grid-area: email;
+    border: solid 1px #6B1B00;
+}
+
+#contact_text{
+    grid-area: text;
+    border: solid 1px #6B1B00;
+}
+
+
+.cursor_pointer:hover{
+    cursor: pointer;
+    background-color: #74352169;
+}
+
+#contact_send{
+    @include estilo_btn (#F9FEFB, #632f27, "medium");
+    grid-area: button;
+    align-self: flex-end;
+    border: solid 1px #6B1B00;
+    
+}
+
+#contact_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

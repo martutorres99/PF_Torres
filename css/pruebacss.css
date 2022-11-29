@@ -1,0 +1,409 @@
+#compra_main {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+#compra_grilla {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 8% 40% 40%;
+  grid-template-areas: "p p" "brasil colombia" "nicaragua peru";
+  justify-content: space-around;
+  align-content: center;
+  column-gap: 10px;
+  row-gap: 10px; }
+
+#cafe_p {
+  grid-area: p;
+  justify-self: center;
+  align-self: center;
+  font-size: 20px;
+  background-color: #e9df58f1; }
+
+#brasil {
+  grid-area: brasil;
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e9df58f1; }
+
+#colombia {
+  grid-area: colombia;
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e9df58f1; }
+
+#nicaragua {
+  grid-area: nicaragua;
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e9df58f1; }
+
+#peru {
+  grid-area: peru;
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e9df58f1; }
+
+.compra_p {
+  width: 90%; }
+
+.granosImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 500px; }
+
+.h2Cafe {
+  padding: 30px; }
+
+form {
+  padding: 20px;
+  margin-bottom: 60px; }
+
+.img_coffee {
+  height: 80%;
+  width: 21%;
+  width: 200px;
+  border-radius: 13px; }
+
+.p_card {
+  width: 40%;
+  line-height: 30px; }
+
+.button_card {
+  height: 17%;
+  width: 12%;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #2a611e;
+  border: solid 2px; }
+
+.button_card:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.397);
+  color: white; }
+
+#main_buy {
+  background-color: #F9FEFB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.compra_padre {
+  background-color: #b6a545a6;
+  height: 45%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.compra_hijo {
+  background-color: rgba(17, 143, 6, 0.288);
+  height: 45%;
+  width: 94%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+#main_contact {
+  height: 800px; }
+
+form {
+  width: 55%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "title title" "name name" "surname surname" "email email" "text ." "text button";
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color: #f0dbb6a4;
+  border: solid 1px #6B1B00; }
+
+#contact_h2 {
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+  color: #6B1B00; }
+
+#contact_name {
+  grid-area: name;
+  border: solid 1px #6B1B00; }
+
+#contact_surname {
+  grid-area: surname;
+  border: solid 1px #6B1B00; }
+
+#contact_email {
+  grid-area: email;
+  border: solid 1px #6B1B00; }
+
+#contact_text {
+  grid-area: text;
+  border: solid 1px #6B1B00; }
+
+.cursor_pointer:hover {
+  cursor: pointer;
+  background-color: #74352169; }
+
+#contact_send {
+  grid-area: button;
+  height: 40px;
+  width: 30%;
+  border-radius: 8px;
+  align-self: flex-end;
+  border: solid 1px #6B1B00;
+  color: #632f27;
+  background-color: #F9FEFB; }
+
+#contact_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#main_us {
+  height: 1200px; }
+
+#nosotros_section {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+#nosotros_img {
+  object-fit: cover;
+  width: 70%;
+  height: 300px; }
+
+#nosotros_h2 {
+  font-size: 30px; }
+
+.nosotros_p {
+  width: 85%;
+  line-height: 30px; }
+
+footer {
+  height: 250px;
+  background-color: #86685d;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text text icons"; }
+  footer h3 {
+    color: black;
+    font-size: 25px;
+    justify-self: center;
+    align-self: center;
+    grid-area: text; }
+
+#footer_iconos {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  height: 90%;
+  width: 90%;
+  padding: 10px; }
+
+.iconf {
+  padding: 15px;
+  color: white;
+  font-size: 25px; }
+
+.iconf:hover {
+  transform: scale(1.5);
+  transition: all 0.5s; }
+
+#icon_fb:hover {
+  color: #4848aa; }
+
+#icon_insta:hover {
+  color: #da31c3; }
+
+#icon_wpp:hover {
+  color: #56bd56; }
+
+header {
+  height: 400px; }
+
+.banner {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+nav {
+  background-color: #6B1B00;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation-name: colors;
+  animation-duration: 6s;
+  animation-iteration-count: infinite; }
+
+nav li {
+  display: inline;
+  background-color: #AE8B70;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px; }
+
+nav li:hover {
+  background-color: rgba(220, 223, 54, 0.685);
+  transition: 0.2s; }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; }
+
+main {
+  height: 1500px;
+  background-color: #F9FEFB;
+  text-align: center; }
+
+#main_index {
+  height: 800px; }
+
+#index_section {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 3fr;
+  grid-template-rows: 500px;
+  justify-content: space-evenly;
+  align-content: center; }
+
+h1 {
+  font-size: 50px;
+  justify-self: center;
+  align-self: center; }
+
+#index_p {
+  justify-self: center;
+  align-self: center;
+  font-size: 20px;
+  line-height: 40px; }
+
+img {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  justify-self: center;
+  align-self: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 400px; }
+  nav {
+    height: 300px; }
+  ul {
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  h1 {
+    font-size: 40px; }
+  #index_section {
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1.5fr 2.5fr; }
+  #compra_main {
+    height: 1500px; }
+  #compra_grilla {
+    display: grid;
+    grid-template-columns: 92%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: "p" "brasil" "colombia" "nicaragua" "peru";
+    justify-content: center;
+    align-content: center; }
+  footer {
+    height: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "text" "icons"; }
+  .footer_h3 {
+    font-size: 20px;
+    grid-area: text;
+    justify-self: center;
+    align-self: flex-end; }
+  #footer_iconos {
+    grid-area: icons;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .compra_hijo {
+    flex-direction: column; }
+  .img_coffee {
+    height: 40%;
+    width: 50%; }
+  .p_card {
+    width: 98%;
+    line-height: 20px;
+    font-size: 14px; }
+  .button_card {
+    width: 28%;
+    height: 11%;
+    font-size: 14px; }
+  form {
+    height: 600px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "title" "name" "surname" "email" "text" "button";
+    align-content: center;
+    justify-content: center;
+    row-gap: 15px; }
+  #contact_send {
+    justify-self: center; }
+  #nosotros_h2 {
+    font-size: 20px; }
+  #nosotros_img {
+    width: 65%;
+    height: 230px; }
+  .nosotros_p {
+    font-size: 18px;
+    line-height: 19px; } }
+
+@keyframes colors {
+  0% {
+    background-color: #6b1b00ce; }
+  25% {
+    background-color: #9e4909d3; }
+  50% {
+    background-color: #812709ce; }
+  75% {
+    background-color: #857d2bdc; }
+  100% {
+    background-color: #cc7727d8; } }
